@@ -1,6 +1,5 @@
 public class Solution {
 
-    // Method to check if the current board is valid
     public boolean isValidSudoku(char[][] board) {
         // Check each row and each column for duplicates
         for (int i = 0; i < 9; i++) {
