@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class CheckIfNAndItsDoubleExist {
     public static boolean checkIfExist(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -15,23 +15,24 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of elements: ");
-        int N = sc.nextInt();
-
-        if (N >= 2 && N <= 500) {
-            int arr[] = new int[N];
-            for (int i = 0; i < N; i++) {
-                System.out.print("Enter element: ");
-                int A = sc.nextInt();
-                if (A >= -Math.pow(10, 3) && A <= Math.pow(10, 3)) {
-                    arr[i] = A;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter number of elements: ");
+            int N = sc.nextInt();
+            
+            if (N >= 2 && N <= 500) {
+                int arr[] = new int[N];
+                for (int i = 0; i < N; i++) {
+                    System.out.print("Enter element: ");
+                    int A = sc.nextInt();
+                    if (A >= -Math.pow(10, 3) && A <= Math.pow(10, 3)) {
+                        arr[i] = A;
+                    }
                 }
+                boolean result = checkIfExist(arr);
+                System.out.println(result ? "True" : "False");
+            } else {
+                System.out.println("Error");
             }
-            boolean result = checkIfExist(arr);
-            System.out.println(result ? "True" : "False");
-        } else {
-            System.out.println("Error");
         }
     }
 }

@@ -1,5 +1,5 @@
 
-public class Solution {
+public class SudokuSolver {
 
     // Method to check if it's safe to place the digit at the given position
     public boolean isSafe(char[][] board, int row, int col, char digit) {

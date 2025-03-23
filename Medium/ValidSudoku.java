@@ -1,4 +1,4 @@
-public class Solution {
+public class ValidSudoku {
 
     public boolean isValidSudoku(char[][] board) {
         // Check each row and each column for duplicates
