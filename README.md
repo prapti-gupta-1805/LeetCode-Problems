@@ -8,14 +8,14 @@ The solutions are organized into three main folders based on difficulty:
 
 ```
 Leetcode-Problems/
-│-- Easy/
-│-- Medium/
-│-- Hard/
+│-- Easy
+│-- Medium
+│-- Hard
 ```
 
-- **Easy/** – Solutions to beginner-friendly problems.
-- **Medium/** – Intermediate-level problems requiring more thought.
-- **Hard/** – Advanced problems with complex logic and optimizations.
+- **Easy** – Solutions to beginner-friendly problems.
+- **Medium** – Intermediate-level problems requiring more thought.
+- **Hard** – Advanced problems with complex logic and optimizations.
 
 ## 📌 Notes
 - Solutions will be in Java mostly.
